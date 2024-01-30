@@ -1,4 +1,4 @@
 from django.shortcuts import render
-from django.views.decorators.csrf import csrf_exempt
 
-@method_decorator(csrf_exempt, name='dispatch')
+def post_list(request): # get request
+    return render(request, 'blog/post_list.html', {}) # show post_list html template
